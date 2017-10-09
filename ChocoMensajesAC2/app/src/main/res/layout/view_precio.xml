@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.encrypted.chocomensajesac.view_precio"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:titleTextColor="@android:color/white"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <LinearLayout
+        android:id="@+id/area_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbarview"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="italic"/>
+
+
+    </LinearLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/contenredes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+  <LinearLayout
+      android:id="@+id/redes"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+
+      android:layout_gravity="bottom">
+
+    <LinearLayout
+    android:id="@+id/area_view1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/area_view"
+    android:layout_marginTop="60dp"
+    android:orientation="horizontal">
+
+<ImageView
+    android:id="@+id/imagFace"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginLeft="12dp"
+    android:src="@drawable/facebook"
+    />
+
+    <TextView
+        android:id="@+id/viewFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorPrimary"
+        android:text="chocomensajeac"
+        android:textSize="20dp"
+        android:textStyle="italic"/>
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+    android:id="@+id/area_view2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/area_view1"
+    android:layout_marginTop="10dp"
+    android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imaginsta"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/instagram"
+            />
+
+        <TextView
+            android:id="@+id/viewInsta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/colorPrimary"
+            android:text="chocomensajeac"
+            android:textSize="20dp"
+            android:textStyle="italic"/>
+
+
+
+</LinearLayout>
+
+      <LinearLayout
+          android:id="@+id/area_view3"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/area_view2"
+          android:layout_marginTop="10dp"
+          android:orientation="horizontal">
+
+          <ImageView
+              android:id="@+id/imagubi"
+              android:layout_width="30dp"
+              android:layout_height="30dp"
+              android:layout_marginLeft="12dp"
+              android:src="@drawable/ubicacion"
+              />
+
+          <TextView
+              android:id="@+id/viewubi"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="32dp"
+              android:layout_marginLeft="10dp"
+              android:textColor="@color/colorPrimary"
+              android:textSize="15dp"
+              android:textStyle="italic"/>
+
+
+
+      </LinearLayout>
+
+
+  </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabenviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="@dimen/fab_margin"
+            android:layout_marginRight="@dimen/fab_margin"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            app:rippleColor="#00c853"
+            app:srcCompat="@drawable/avion" />
+
+    </FrameLayout>
+</RelativeLayout>
